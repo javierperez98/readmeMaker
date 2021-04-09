@@ -1,0 +1,23 @@
+{
+  "name": "readmeMaker",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierperez98/readmeMaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javierperez98/readmeMaker/issues"
+  },
+  "homepage": "https://github.com/javierperez98/readmeMaker#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
