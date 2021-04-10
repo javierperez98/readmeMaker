@@ -1,6 +1,5 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const licenseGen = require("script.js/licensesGen.js");
 
 const questions = [
 	{
@@ -57,8 +56,8 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then((data) => {
-	const badge = ``;
-	const licensePicked = ``;
+	var badge = ``;
+	var licensePicked = ``;
 	if (data.licenses === "MIT") {
 		licensePicked = mit;
 		badge = `![MIT](https://img.shields.io/github/license/microsoft/vscode)`;
@@ -71,7 +70,7 @@ inquirer.prompt(questions).then((data) => {
 	}
 
 	const readme = `# ${data.title}
-
+${badge}
 ## Description
 <!-- Provide a short description explaining the what, why, and how of your project.
 What was your motivation? Why did you build this project? What problem does it solve? What did you learn? -->
@@ -102,7 +101,7 @@ What was your motivation? Why did you build this project? What problem does it s
 
 ## License
 <!-- If you need help choosing a license, refer to https://choosealicense.com/ -->
-- ${licensePicked}
+${licensePicked}
 
 ## Contribute
 <!-- If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. -->
@@ -125,7 +124,7 @@ What was your motivation? Why did you build this project? What problem does it s
 
 var mit = `MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2021 [fullname]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
