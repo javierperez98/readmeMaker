@@ -1,4 +1,4 @@
-# Easy ReadMe Maker
+# ReadMe Maker
 
 ![MIT](https://img.shields.io/github/license/microsoft/vscode)
 
